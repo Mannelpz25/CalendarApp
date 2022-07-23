@@ -32,15 +32,15 @@ export const CalendarModal = () => {
     const {activeEvent, startSavingEvent,setActiveEvent} = useCalendarStore();
     const [formSubmitted, setFormSubmitted] = useState(false)
     const [formValues, setFormValues] = useState({
-        title: 'Manuel',
-        notes: 'López',
+        title: '',
+        notes: '',
         start: new Date(),
         end: addHours(new Date(), 2),
     })
     const titleClass = useMemo(() => {
         if(!formSubmitted) return '';
         return(formValues.title.length > 0)
-            ? 'is-valid'
+            ? ''
             : 'is-invalid'
     }, [formValues.title, formSubmitted])
 
@@ -64,8 +64,7 @@ export const CalendarModal = () => {
     }
 
     const onCloseModal = () => {
-        closeDateModal();
-        setActiveEvent(null);        
+        closeDateModal();       
     }
 
     const onSubmit = async (event) => {
@@ -101,7 +100,7 @@ export const CalendarModal = () => {
                 <label>Fecha y hora inicio</label>
                 <DatePicker 
                     selected={formValues.start}
-                    onChange={(event) =>onDateChange(event,'start')}
+                    onChange={(event) => onDateChange(event,'start')}
                     className="form-control"
                     dateFormat="Pp"
                     showTimeSelect
@@ -115,7 +114,7 @@ export const CalendarModal = () => {
                 <DatePicker 
                     minDate={formValues.start}
                     selected={formValues.end}
-                    onChange={(event) =>onDateChange(event,'end')}
+                    onChange={(event) => onDateChange(event,'end')}
                     className="form-control"
                     dateFormat="Pp"
                     showTimeSelect
