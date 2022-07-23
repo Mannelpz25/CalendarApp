@@ -1,3 +1,11 @@
+/* ---------- Ayuda!! ----------
+*    Helper para obtener mensajes
+*/
+//-Importaciones:
+
+//-Contenido:
+
+//-Exportaciones:
 export const getMessagesES = () => {
     return {
         allDay: 'Todo el día',

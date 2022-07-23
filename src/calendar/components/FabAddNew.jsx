@@ -1,7 +1,11 @@
-
+/* ---------- Ayuda!! ----------
+*    Comonente del boton nuevo evento
+*/
+//-Importaciones:
 import { addHours } from "date-fns";
 import { useCalendarStore, useUiStore } from "../../hooks";
 
+//-Contenido:
 export const FabAddNew = () => {
     const {openDateModal} = useUiStore();
     const {setActiveEvent} = useCalendarStore();

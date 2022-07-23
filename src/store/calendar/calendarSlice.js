@@ -1,6 +1,11 @@
+/* ---------- Ayuda!! ----------
+*    Slice del calendario
+*/
+//-Importaciones:
 import { createSlice } from "@reduxjs/toolkit";
 import { addHours } from "date-fns";
 
+//-Contenido:
 const tempEvent = {
     _id: new Date().getTime(),
     title: 'Cumpleaños del jefe',
@@ -50,4 +55,5 @@ export const calendarSlice = createSlice({
     },
 });
   
+//-Exportaciones:
 export const { onSetActiveEvent, onAddNewEvent, onUpdateEvent, onDeleteEvent} = calendarSlice.actions;

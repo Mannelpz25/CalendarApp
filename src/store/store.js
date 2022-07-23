@@ -1,8 +1,12 @@
+/* ---------- Ayuda!! ----------
+*    Store de REDUX
+*/
+//-Importaciones:
 import { configureStore } from "@reduxjs/toolkit";
 import { calendarSlice } from "./calendar/calendarSlice";
 import { uiSlice } from "./ui/uiSlice";
 
-
+//-Contenido:
 export const store = configureStore({
     reducer:{
         calendar: calendarSlice.reducer,

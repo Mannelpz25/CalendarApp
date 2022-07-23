@@ -1,4 +1,9 @@
+/* ---------- Ayuda!! ----------
+*    Componente de Eventos en calendario
+*/
+//-Importaciones:
 
+//-Contenido:
 export const CalendarEvent = ({event}) => {
     const {title, user} = event;
     return (

@@ -1,12 +1,15 @@
+/* ---------- Ayuda!! ----------
+*    Pagina del calendario
+*/
+//-Importaciones:
 import { Calendar } from 'react-big-calendar'
 import 'react-big-calendar/lib/css/react-big-calendar.css' 
-
 import { NavBar, CalendarEvent,CalendarModal,FabAddNew, FabDelete} from "../"
 import { getMessagesES, localizer } from '../../helpers'
 import { useState } from 'react'
-import { useCalendarStore, useUiStore } from '../../hooks'
- 
+import { useCalendarStore, useUiStore } from '../../hooks' 
 
+//-Contenido:
 export const CalendarPage = () => {
     const {events, setActiveEvent} = useCalendarStore();
     const {openDateModal} = useUiStore();

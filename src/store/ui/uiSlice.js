@@ -1,5 +1,10 @@
+/* ---------- Ayuda!! ----------
+*    Slice del UI
+*/
+//-Importaciones:
 import { createSlice } from "@reduxjs/toolkit";
 
+//-Contenido:
 export const uiSlice = createSlice({
 
     name: 'ui',
@@ -15,5 +20,6 @@ export const uiSlice = createSlice({
         },
     },
 });
-  
+
+//-Exportaciones:
 export const { onOpenDateModal, onCloseDateModal } = uiSlice.actions;

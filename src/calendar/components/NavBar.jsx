@@ -1,5 +1,9 @@
+/* ---------- Ayuda!! ----------
+*    Componente barra de navegación
+*/
+//-Importaciones:
 
-
+//-Contenido:
 export const NavBar = () => {
   return (
     <div className="navbar navbar-dark bg-dark mb-4 px-4">

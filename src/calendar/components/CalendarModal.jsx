@@ -1,3 +1,7 @@
+/* ---------- Ayuda!! ----------
+*    Componente del modal de evento
+*/
+//-Importaciones:
 import { addHours, differenceInSeconds } from "date-fns";
 import { useEffect, useMemo, useState } from "react";
 import Modal from "react-modal"
@@ -8,6 +12,7 @@ import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import { useCalendarStore, useUiStore } from "../../hooks";
 
+//-Contenido:
 registerLocale('es', es);
 
 const customStyles = {

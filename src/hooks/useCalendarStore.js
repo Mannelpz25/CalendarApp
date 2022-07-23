@@ -1,7 +1,11 @@
+/* ---------- Ayuda!! ----------
+*    Custom hook Calendar
+*/
+//-Importaciones:
 import { useSelector, useDispatch} from "react-redux"
 import { onAddNewEvent, onDeleteEvent, onSetActiveEvent, onUpdateEvent } from "../store/calendar/calendarSlice";
 
-
+//-Exportaciones:
 export const useCalendarStore = () =>{
     const dispatch = useDispatch();
     const {events, activeEvent} =useSelector(state => state.calendar);

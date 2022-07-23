@@ -1,5 +1,10 @@
+/* ---------- Ayuda!! ----------
+*    Componente de boton eliminar evento
+*/
+//-Importaciones:
 import { useCalendarStore, useUiStore } from "../../hooks";
 
+//-Contenido:
 export const FabDelete = () => {
     const {startDeletingEvent, hasEventSelected} = useCalendarStore();
     const {isDateModalOpen} = useUiStore();

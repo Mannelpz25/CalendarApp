@@ -1,8 +1,12 @@
+/* ---------- Ayuda!! ----------
+*    Router Principal
+*/
+//-Importaciones:
 import { Routes, Route, Navigate } from "react-router-dom"
 import { LoginPage } from "../auth";
 import { CalendarPage } from "../calendar";
 
-
+//-Contenido:
 export const AppRouter = () => {
     const authStatus = 'authenticated';  // 'authenticated' || 'not-authenticated'
 

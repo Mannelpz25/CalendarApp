@@ -1,5 +1,10 @@
+/* ---------- Ayuda!! ----------
+*    Pagina del Login
+*/
+//-Importaciones:
 import './LoginPage.css';
 
+//-Contenido:
 export const LoginPage = () => {
     return (
         <div className="container login-container">
